@@ -21,7 +21,7 @@ kelas_counts = df['Stress_Level'].value_counts()
 #Menampilkan Grafik Batang
 st.subheader("📊 Grafik Batang")
 fig, ax = plt.subplots()
-kelas_counts.plot(kind='bar', color=['skyblue', 'read', 'lightgreen'], ax=ax)
+kelas_counts.plot(kind='bar', color=['skyblue', 'red', 'lightgreen'], ax=ax)
 ax.set_xlabel("Tingkat Stres")
 ax.set_ylabel("Jumlah")
 ax.set_title("Distribusi Tingkat Stres Mahasiswa")

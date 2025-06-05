@@ -7,5 +7,5 @@ st.sidebar.header("Main Menu")
 
 #Memberikan Judul dan Gambar yang menarik
 st.title("APLIKASI MENGUKUR TINGKAT STRES")
-st.image ("https://pngtree.com/freepng/stressed-office-workers-face-deadline-pressure-control-metaphor-discipline-vector_12550468.html")
+st.image ("https://pngtree.com/freepng/stressed-office-workers-burnout-open-laptops-desks-flat-colors-minimalist-frustration-exhaustion-corporate-vector-workplace-stress-deadline-pressure_20454278.html")
 st.write ("Dibuat Oleh Kelompok 16")

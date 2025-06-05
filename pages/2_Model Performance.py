@@ -11,7 +11,7 @@ st.title("Model Performa")
 st.write("Pilih model performa yang kalian inginkan")
 
 #Memanggil model yang akan digunakan
-df = pd.read_csv("model/Data Student lifestyle.csv", sep=';')
+df = pd.read_csv("Model/Data Student Lifestyle.csv", sep=';')
 
 testing = st.slider("Data Testing", min_value=10, max_value=90, value=20)
 st.write(f"Nilai yang dipilih: {testing}")
@@ -27,7 +27,7 @@ def load_model(path):
     model = joblib.load(path)
     return model
 
-model = load_model('model/decision_tree_model.pkl')
+model = load_model('Model/decision_tree_model.pkl')
 
 #Menampilkan Hasil Performa
 if st.button("Hasil"):

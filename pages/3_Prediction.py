@@ -15,10 +15,10 @@ def load_model(path):
     model = joblib.load(path)
     return model
 
-model = load_model('model/decision_tree_model.pkl')
+model = load_model('Model/decision_tree_model.pkl')
 
 #Mendefinisikan variabel input
-nama = st.text_input("Masukkan nama Anda:")
+nama = st.text_input("Nama kamu siapa?")
 shpd = st.slider("Study_Hours_Per_Day", min_value=0.0, max_value=10.0, value=2.0)  # hapus tanda " setelah angka default
 ehpd = st.slider("Extracurricular_Hours_Per_Day", min_value=0.0, max_value=10.0, value=2.0)
 s2hpd = st.slider("Sleep_Hours_Per_Day", min_value=0.0, max_value=10.0, value=2.0)
@@ -40,5 +40,5 @@ if st.button("Prediksi"):
         ]
     )
     hasil = model.predict(input_data)
-    st.success(f"Halo Kak {nama}, tingkat stess kamu adalah {hasil[0]}")
+    st.success(f"Halo Kak {nama}, tingkat stess kamu {hasil[0]}")
     st.success(f"Semoga harimu menyenangkan")

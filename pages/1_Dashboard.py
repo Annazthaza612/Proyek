@@ -9,7 +9,7 @@ st.title("Halo, Selamat datang di aplikasi Pengukur Tingkat Stres Mahasiswa 😄
 st.write("Aplikasi ini untuk mengukur tingkat stres mahasiswa berdasarkan gaya hidup.")
 
 #Load Dataset
-df = pd.read_csv("model/Data Student lifestyle.csv", sep=';')
+df = pd.read_csv("Model/Data Student Lifestyle.csv", sep=';')
 
 # Menampilkan dataframe
 st.subheader("📂 Data Gaya Hidup Mahasiswa")
